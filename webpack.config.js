@@ -13,11 +13,17 @@ module.exports = {
         query: {
           presets: ['react', 'es2015', 'stage-1']
         }
-      }
+      },
+
+      {        test:/\.(png|svg|jpeg|ttf)$/,
+              loader:require.resolve("file-loader") + "?name=../[path][name].[ext]"
+
+    }
+
     ]
   },
   resolve: {
-    extensions: ['', '.js', '.jsx']
+    extensions: ['', '.js', '.jsx',]
   },
   devServer: {
     historyApiFallback: true,
