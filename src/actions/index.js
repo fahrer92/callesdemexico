@@ -4,6 +4,7 @@ const API_KEY = '57bf0ad468fa485c9d33cfe0172d9a9f';
 const ROOT_URL = `https://newsapi.org/v2/`
 
 export const FETCH_NEWS = 'FETCH_NEWS';
+export const DISPLAY_NEWS = 'DISPLAY_NEWS';
 
 export function fetchNews(category, term){
   let url;
@@ -25,4 +26,16 @@ export function fetchNews(category, term){
     payload: request
 
   };
+}
+
+export function displayNews(url){
+  console.log('in the function');
+  return {
+
+    type: DISPLAY_NEWS,
+    payload: url
+
+  };
+
+
 }

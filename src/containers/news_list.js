@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
-import {displayNews} from '../actions/display_news';
+import {displayNews} from '../actions';
 
  class NewsList extends Component{
 

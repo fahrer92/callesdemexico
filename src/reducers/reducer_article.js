@@ -1,4 +1,4 @@
-import {DISPLAY_NEWS} from '../actions/display_news'
+import {DISPLAY_NEWS} from '../actions'
 export default function(state =[], action){
 
   switch (action.type){
@@ -7,6 +7,7 @@ export default function(state =[], action){
 
     console.log('reducer', action.payload);
     return action.payload;
+
 
 
   }

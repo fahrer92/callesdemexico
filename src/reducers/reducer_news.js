@@ -1,4 +1,4 @@
-import {FETCH_NEWS} from '../actions/index'
+import {FETCH_NEWS} from '../actions'
 export default function(state =[], action){
 
   switch (action.type){
